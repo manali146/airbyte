@@ -1117,9 +1117,7 @@ abstract class BaseTypingDedupingTest {
         val expectedRawRecords0 = readRecords("dat/sync2_expectedrecords_raw.jsonl")
         val expectedFinalRecords0 =
             readRecords("dat/sync2_expectedrecords_fullrefresh_append_final.jsonl")
-        (expectedFinalRecords0 + expectedRawRecords0).forEach {
-            (it as ObjectNode).put(JavaBaseConstants.COLUMN_NAME_AB_GENERATION_ID, 41)
-        }
+        fixGenerationId(expectedRawRecords0, expectedFinalRecords0, 41)
         verifySyncResult(expectedRawRecords0, expectedFinalRecords0, disableFinalTableComparison())
 
         val catalog =
@@ -1324,7 +1322,10 @@ abstract class BaseTypingDedupingTest {
                 val sync2Records =
                     baseRecords.subList(expectedFinalRecords1.size, baseRecords.size).onEach {
                         (it as ObjectNode).put(
-                            JavaBaseConstants.COLUMN_NAME_AB_GENERATION_ID,
+                            finalMetadataColumnNames.getOrDefault(
+                                JavaBaseConstants.COLUMN_NAME_AB_GENERATION_ID,
+                                JavaBaseConstants.COLUMN_NAME_AB_GENERATION_ID
+                            ),
                             44,
                         )
                     }
