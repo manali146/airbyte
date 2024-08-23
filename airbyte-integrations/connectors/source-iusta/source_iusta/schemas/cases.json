@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "additionalProperties": true,
+    "properties": {
+      "assignedUserId": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "caseGroupId": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "closedAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "closedBy": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "comment": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "createdAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "createdBy": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "customerId": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "id": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "name": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "number": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "permissionSetId": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "private": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "status": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "updatedAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "updatedBy": {
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": "object"
+  }

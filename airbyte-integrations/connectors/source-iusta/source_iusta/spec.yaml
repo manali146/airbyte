@@ -1,0 +1,15 @@
+documentationUrl: https://docsurl.com
+connectionSpecification:
+  $schema: http://json-schema.org/schema#
+  title: Iusta Spec
+  type: object
+  required:
+    - Authorization
+  properties:
+    # 'TODO: This schema defines the configuration required for the source. This usually involves metadata such as database and/or authentication information.':
+    Authorization:
+      type: string
+      description: >-
+        IUSTA API key (API token 2; find yours).
+      order: 0
+      airbyte_secret: true

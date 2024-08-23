@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "additionalProperties": true,
+    "properties": {
+      "createdAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "createdBy": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "datasetTypeId": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "id": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "name": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "updatedAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "updatedBy": {
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "type": "object"
+  }

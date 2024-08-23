@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "additionalProperties": true,
+    "properties": {
+      "abbreviation": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "active": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "createdAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "createdBy": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "email": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "id": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "jobTitle": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "mfaEnabled": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "mfaEnabledAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "name": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "position": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "ssoIdentity": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "surname": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "updatedAt": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "updatedBy": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "userLicenseTypeId": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "username": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "type": "object"
+  }
