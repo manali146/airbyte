@@ -21,7 +21,7 @@ data:
   connectorSubtype: api
   connectorType: source
   definitionId: f5f70bfb-c05f-420d-a0e6-b7b3ec2870e8
-  dockerImageTag: 0.1.0 # Changed version from dev to 0.1.0
+  dockerImageTag: dev
   dockerRepository: manalithakurflighright/source-iusta #airbyte/source-iusta - Updated the docker registry
   githubIssueLabel: source-iusta
   icon: icon.svg
